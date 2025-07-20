@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap');
+@import "tailwindcss";
+
+
+
+
+/* Custom futuristic cursor */
+.futuristic-cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #00ffff;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+  mix-blend-mode: difference;
+}
+
+/* Glass morphism effect */
+.glass-effect {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Neon border effect */
+.neon-border {
+  border: 1px solid #00ffff;
+  box-shadow: 0 0 10px #00ffff;
+}
+
+/* Holographic effect */
+.holographic {
+  background: linear-gradient(45deg, #00ffff, #8b5cf6, #00ffff, #8b5cf6);
+  background-size: 400% 400%;
+  animation: holographic 4s ease infinite;
+}
+
+@keyframes holographic {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
